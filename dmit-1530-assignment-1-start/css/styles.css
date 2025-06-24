@@ -3,6 +3,7 @@
     --blue-grey-100: #CFD8DC;
     --blue-grey-200: #B0BEC5;
     --blue-grey-900: #263238;
+    --black: #111111;
 }
 
 body {
@@ -11,7 +12,35 @@ body {
 }
 
 header, footer {
-    background-color: var(--blue-grey-50);
+    background-color: var(--black);
     color: #fff;
     padding: 2rem 4rem;   
+}
+
+.logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.logo img {
+    width: 6rem;
+    height: auto; 
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0;  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
 }
