@@ -11,10 +11,13 @@ body {
     text-align: center; 
 }
 
+/*header, footer styling*/
+
 header, footer {
     background-color: var(--black);
     color: #fff;
     padding: 2rem 4rem;   
+    margin-bottom: 0;
 }
 
 .logo {
@@ -43,4 +46,23 @@ nav ul {
 nav a {
     text-decoration: none;
     color: #fff;
+}
+
+.hero {
+    background-color: var(--blue-grey-50);
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.hero h2,
+.hero p,
+.hero .btn {
+    margin-top: 0;
+    padding-top: 4rem;
+}
+
+.star {
+    font-size: 2.5rem;
+    font-family: 'inter', sans-serif;
+    font-weight: bold;
 }
