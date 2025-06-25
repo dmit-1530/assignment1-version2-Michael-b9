@@ -482,7 +482,7 @@ main p {
     }
 
     .footer-container {
-        margin: 4rem 12rem;
+        padding: 0rem 3rem;
     }
 
     .features-container > img {
@@ -490,5 +490,26 @@ main p {
         height: auto;   
     }
 
+    .architecture {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .architecture-header {
+        width: 100%;
+    }
+
+    .architecture-content {
+        width: calc((100% - 2rem)/2);
+        text-align: left;
+    }
+
+    .architecture img {
+        order: 2;
+        width: calc((100% - 2rem)/2);
+        margin: 0;
+    }
 
 }
