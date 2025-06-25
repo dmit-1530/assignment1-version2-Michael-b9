@@ -312,10 +312,13 @@ main p {
 }
 
 .culture {
+    display: flex;
+    flex-direction: column;
     background-color: var(--blue-grey-300);
     color: #fff;
     padding: 4rem 2rem;
     text-align: left;
+    gap: 2rem;
 }
 
 .culture h2,
@@ -338,11 +341,46 @@ main p {
 
 /*medium */
 @media screen and (min-width: 768px) {
+    
     header {
         display: flex;
         flex-direction: row;
         gap: 10rem;
         justify-content: center;
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+    
+    .logo-footer {
+        align-items: flex-start;
+        margin-top: 0;
+        flex: 1;
+    }
+    
+    footer nav {
+        flex: 2;
+        justify-content: flex-end;
+        margin-top: 0;
+        gap: 3rem;
+    }
+    
+    .footer-links {
+        text-align: left;
+    }
+    
+    footer p:nth-child(3) {
+        margin-top: 3rem;
+        text-align: center;
     }
 
     .info-1 {
@@ -367,13 +405,89 @@ main p {
         margin-left: 0;
         padding-left: 0;
     }
+
+    .sub-box {
+        margin: 0 10rem;
+    }
+
+    .culture {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+    
+    .culture h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .culture p {
+        width: calc((100% - 2rem)/2);
+    }
+
+    .features-container {
+        display: flex;
+        gap: 3rem;
+        align-items: flex-start; 
+    }
+
+    .features-container > img {
+        width: 45%;
+        height: auto;   
+    }
+
+    .features-inner-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .features-inner-content ul {
+        padding-left: 1rem;
+        margin-top: 0; 
+    }
+
+
+    .features-inner-content figure {
+        margin: 2rem 0 0 0;
+        width: 100%;
+    }
+
+    .features-inner-content figure img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    .features-inner-content figcaption {
+        text-align: left;
+        margin-top: 0.5rem;
+        color: var(--blue-grey-50)
+    }
+
+  
 }
 
 /*large */
 
 @media screen and (min-width:960px) {
+
+    header {
+        gap: 30rem;
+    }
     .info-content {
         width: calc((100% - 4rem)/3);
+    }
+
+    .footer-container {
+        margin: 4rem 12rem;
+    }
+
+    .features-container > img {
+        width: 30%;
+        height: auto;   
     }
 
 }
